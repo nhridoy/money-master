@@ -8,6 +8,92 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main></main>
+    <main>
+      <div class="container mx-auto">
+        <!-- Title -->
+        <h2 class="text-cyan-700 font-bold text-4xl text-center my-4">
+          Money Bag
+        </h2>
+        <!-- Main Body -->
+        <div class="flex gap-10 flex-col md:flex-row">
+          <!-- Image -->
+          <div class="w-full">
+            <img
+              class="w-full h-full object-cover"
+              src="images/banner.jpg"
+              alt=""
+            />
+          </div>
+          <!-- Form -->
+          <div class="bg-lightGray w-full text-center">
+            <!-- Income -->
+            <h1 class="text-2xl my-6 font-semibold">Income</h1>
+            <div class="flex my-6 items-center gap-3 justify-center">
+              <label for="income" class="font-semibold">Income: </label>
+              <input
+                type="text"
+                id="income"
+                class="bg-gray-200 focus:outline-transparent p-2"
+              />
+            </div>
+            <!-- Expense -->
+            <h1 class="text-2xl my-6 font-semibold">Expense</h1>
+            <div class="flex my-6 items-center gap-3 justify-center">
+              <label for="food" class="font-semibold">Food: </label>
+              <input
+                type="text"
+                id="food"
+                class="bg-gray-200 focus:outline-transparent p-2"
+              />
+            </div>
+            <div class="flex my-6 items-center gap-3 justify-center">
+              <label for="rent" class="font-semibold">Rent: </label>
+              <input
+                type="text"
+                id="rent"
+                class="bg-gray-200 focus:outline-transparent p-2"
+              />
+            </div>
+            <div class="flex my-6 items-center gap-3 justify-center">
+              <label for="clothes" class="font-semibold">Clothes: </label>
+              <input
+                type="text"
+                id="clothes"
+                class="bg-gray-200 focus:outline-transparent p-2"
+              />
+            </div>
+            <button
+              class="bg-blue-500 text-white px-10 py-2 rounded"
+              id="calculate"
+            >
+              Calculate
+            </button>
+
+            <!-- Result -->
+            <div class="h-20 mt-10" id="result"></div>
+
+            <!-- Savings -->
+            <div class="flex items-center justify-center gap-5 mt-10">
+              <label for="save">Save: </label>
+              <input
+                type="text"
+                name=""
+                id="save"
+                class="bg-gray-200 focus:outline-transparent p-2"
+              />
+              <p>%</p>
+              <button
+                class="bg-blue-500 text-white px-10 py-2 rounded"
+                id="save"
+              >
+                Save
+              </button>
+            </div>
+            <!-- Result -->
+            <div class="h-20 mt-10" id="savings"></div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

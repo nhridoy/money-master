@@ -33,7 +33,7 @@
               <input
                 type="text"
                 id="income"
-                class="bg-gray-200 focus:outline-transparent p-2"
+                class="bg-gray-200 focus:outline-transparent p-2 calculate-input"
               />
             </div>
             <!-- Expense -->
@@ -43,7 +43,7 @@
               <input
                 type="text"
                 id="food"
-                class="bg-gray-200 focus:outline-transparent p-2"
+                class="bg-gray-200 focus:outline-transparent p-2 calculate-input"
               />
             </div>
             <div class="flex my-6 items-center gap-3 justify-center">
@@ -51,7 +51,7 @@
               <input
                 type="text"
                 id="rent"
-                class="bg-gray-200 focus:outline-transparent p-2"
+                class="bg-gray-200 focus:outline-transparent p-2 calculate-input"
               />
             </div>
             <div class="flex my-6 items-center gap-3 justify-center">
@@ -59,7 +59,7 @@
               <input
                 type="text"
                 id="clothes"
-                class="bg-gray-200 focus:outline-transparent p-2"
+                class="bg-gray-200 focus:outline-transparent p-2 calculate-input"
               />
             </div>
             <button
@@ -70,10 +70,12 @@
             </button>
 
             <!-- Result -->
-            <div class="h-20 mt-10" id="result"></div>
+            <div class="h-20 mt-10 flex flex-col gap-3" id="result"></div>
 
             <!-- Savings -->
-            <div class="flex items-center justify-center gap-5 mt-10">
+            <div
+              class="flex flex-col md:flex-row gap-2 items-center justify-center sm:gap-5 mt-10"
+            >
               <label for="save">Save: </label>
               <input
                 type="text"
@@ -84,7 +86,7 @@
               <p>%</p>
               <button
                 class="bg-blue-500 text-white px-10 py-2 rounded"
-                id="save"
+                id="saveBtn"
               >
                 Save
               </button>
@@ -95,5 +97,7 @@
         </div>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
